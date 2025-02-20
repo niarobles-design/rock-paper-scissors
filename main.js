@@ -75,33 +75,32 @@ function playRound(computerChoice, humanChoice) {
   console.log("Rival's score: " + computerScore);
 }
 
+//Round 1
 computerChoice = getComputerChoice(3);
-console.log(computerChoice);
 humanChoice = getHumanChoice();
-console.log(humanChoice);
 
 playRound(computerChoice, humanChoice);
 
+//Round 2
 computerChoice = getComputerChoice(3);
-console.log(computerChoice);
 humanChoice = getHumanChoice();
-console.log(humanChoice);
+
 playRound(computerChoice, humanChoice);
 
+//Round 3
 computerChoice = getComputerChoice(3);
-console.log(computerChoice);
 humanChoice = getHumanChoice();
-console.log(humanChoice);
+
 playRound(computerChoice, humanChoice);
 
+//Round 4
 computerChoice = getComputerChoice(3);
-console.log(computerChoice);
 humanChoice = getHumanChoice();
-console.log(humanChoice);
+
 playRound(computerChoice, humanChoice);
 
+//Round 4
 computerChoice = getComputerChoice(3);
-console.log(computerChoice);
 humanChoice = getHumanChoice();
-console.log(humanChoice);
+
 playRound(computerChoice, humanChoice);
