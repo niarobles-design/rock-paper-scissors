@@ -42,3 +42,32 @@ function getHumanChoice() {
   }
   return result;
 }
+//The function receives the computer and the player choices
+//It compares both choices:
+// - If they are the same: it prints 'Draw!'
+// - If they are different: it checks both answers and prints 'win' or 'loose' according to the game rules
+// paper > rock
+// rock > scissors
+// scissors > paper
+
+function playRound(computerChoice, humanChoice) {
+  if (computerChoice === humanChoice) {
+    console.log("Draw!");
+  } else {
+    if ((computerChoice === "rock") & (humanChoice !== "paper")) {
+      computerScore += 1;
+      console.log("You loose");
+    } else if ((computerChoice === "scissors") & (humanChoice !== "rock")) {
+      console.log("You loose");
+      computerScore += 1;
+    } else if ((computerChoice === "paper") & (humanChoice !== "scissors")) {
+      console.log("You loose");
+      computerScore += 1;
+    } else {
+      console.log("You win");
+      humanScore += 1;
+    }
+  }
+  console.log("Your score: " + humanScore);
+  console.log("Rival's score: " + computerScore);
+}
