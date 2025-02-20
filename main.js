@@ -32,12 +32,16 @@ function getHumanChoice() {
     "What's your choice? 'Rock', 'paper', or scissors?"
   ).toLocaleLowerCase();
 
+  if (result === "rock" || result === "paper" || result === "scissors") {
+    return result;
+  } else {
   while (result !== "rock" || result !== "paper" || result !== "scissors") {
     result = prompt(
       "Invalid input, please enter: 'rock', 'paper', or scissors"
     ).toLocaleLowerCase();
     if (result === "rock" || result === "paper" || result === "scissors") {
       break;
+      }
     }
   }
   return result;
