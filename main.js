@@ -1,3 +1,10 @@
+//Global Variables
+
+let computerChoice = "";
+let humanChoice = "";
+let humanScore = 0;
+let computerScore = 0;
+
 //The function randomly assigns 0, 1 or 2 to the 'result' variable
 //If 'result' = 0, the function returns 'rock'
 //If 'result' = 1, the function returns 'paper'
