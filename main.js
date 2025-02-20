@@ -35,17 +35,16 @@ function getHumanChoice() {
   if (result === "rock" || result === "paper" || result === "scissors") {
     return result;
   } else {
-  while (result !== "rock" || result !== "paper" || result !== "scissors") {
-    result = prompt(
-      "Invalid input, please enter: 'rock', 'paper', or scissors"
-    ).toLocaleLowerCase();
-    if (result === "rock" || result === "paper" || result === "scissors") {
+    while (result !== "rock" || result !== "paper" || result !== "scissors") {
+      result = prompt(
+        "Invalid input, please enter: 'rock', 'paper', or scissors"
+      ).toLocaleLowerCase();
       break;
-      }
     }
   }
   return result;
 }
+
 //The function receives the computer and the player choices
 //It compares both choices:
 // - If they are the same: it prints 'Draw!'
@@ -75,3 +74,34 @@ function playRound(computerChoice, humanChoice) {
   console.log("Your score: " + humanScore);
   console.log("Rival's score: " + computerScore);
 }
+
+computerChoice = getComputerChoice(3);
+console.log(computerChoice);
+humanChoice = getHumanChoice();
+console.log(humanChoice);
+
+playRound(computerChoice, humanChoice);
+
+computerChoice = getComputerChoice(3);
+console.log(computerChoice);
+humanChoice = getHumanChoice();
+console.log(humanChoice);
+playRound(computerChoice, humanChoice);
+
+computerChoice = getComputerChoice(3);
+console.log(computerChoice);
+humanChoice = getHumanChoice();
+console.log(humanChoice);
+playRound(computerChoice, humanChoice);
+
+computerChoice = getComputerChoice(3);
+console.log(computerChoice);
+humanChoice = getHumanChoice();
+console.log(humanChoice);
+playRound(computerChoice, humanChoice);
+
+computerChoice = getComputerChoice(3);
+console.log(computerChoice);
+humanChoice = getHumanChoice();
+console.log(humanChoice);
+playRound(computerChoice, humanChoice);
