@@ -10,8 +10,6 @@ let computerScore = 0;
 //If 'result' = 1, the function returns 'paper'
 //If 'result' = 2, the function returns 'scissors'
 
-let computerChoice = "";
-let humanChoice = "";
 function getComputerChoice(max) {
   let result = Math.floor(Math.random() * max);
   if (result === 0) {
@@ -44,9 +42,3 @@ function getHumanChoice() {
   }
   return result;
 }
-
-computerChoice = getComputerChoice(3);
-console.log(computerChoice);
-
-humanChoice = getHumanChoice();
-console.log(humanChoice);
